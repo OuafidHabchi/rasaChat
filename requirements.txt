@@ -1,3 +1,2 @@
-python-3.9.10
 rasa==3.2.0  # ou la version que tu utilises
-rasa-sdk==3.2.0  # si tu utilises des actions personnalisées
+rasa-sdk==3.2.0
