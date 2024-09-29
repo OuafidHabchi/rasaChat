@@ -1,0 +1,11 @@
+# Exclure les environnements virtuels
+venv/
+rasaenv/
+
+# Exclure les dossiers de cache
+__pycache__/
+*.pyc
+
+# Exclure les fichiers de log et d'autres fichiers inutiles
+*.log
+*.txt
