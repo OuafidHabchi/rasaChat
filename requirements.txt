@@ -1,2 +1,2 @@
-rasa
-rasa-sdk
+rasa==3.1.0  # ou la version compatible
+rasa-sdk==3.1.0  # si tu utilises des actions personnalisées
