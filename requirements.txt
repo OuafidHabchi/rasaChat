@@ -1,3 +1,2 @@
-python -m venv rasaenv
 rasa==3.0.0  # Ou la version que tu utilises
 rasa-sdk==3.0.0  # Si tu utilises des actions personnalisées
