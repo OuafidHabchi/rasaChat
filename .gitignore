@@ -1,0 +1,16 @@
+# Ignorer les modèles générés
+models/
+logs/
+
+# Ignorer les environnements virtuels
+venv/
+rasaenv/
+__pycache__/
+*.pyc
+
+# Ignorer les fichiers cachés
+.DS_Store
+.idea/
+
+# Ignorer les caches de tests
+.pytest_cache/
