@@ -1,0 +1,19 @@
+# Ignore local virtual environments
+venv/
+env/
+__pycache__/
+
+# Ignore local config files
+*.env
+*.log
+
+# Ignore development tools and configs
+node_modules/
+tests/
+.git/
+
+# Ignore large files
+*.mp4
+*.mov
+*.zip
+*.tar.gz
