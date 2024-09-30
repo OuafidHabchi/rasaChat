@@ -1,3 +1,4 @@
 rasa==3.2.0  # ou la version que tu utilises
 rasa-sdk==3.2.0
+gunicorn
 
