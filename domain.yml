@@ -5,33 +5,313 @@ intents:
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - access_Problemes  # Correction de l'orthographe
+  - access_Problemes_en
+  - access_Problemes_fr
+  - incorrect_address_en
+  - incorrect_address_fr
+  - unclear_delivery_instructions_en
+  - unclear_delivery_instructions_fr
+  - client_not_present_signature_en
+  - client_not_present_signature_fr
+  - parking_problem_en
+  - parking_problem_fr
+  - secure_area_access_en
+  - secure_area_access_fr
+  - route_error_en
+  - route_error_fr
+  - damaged_package_en
+  - damaged_package_fr
+  - vehicle_problem_en
+  - vehicle_problem_fr
+  - package_refused_en
+  - package_refused_fr
+  - missing_package_en
+  - missing_package_fr
+  - package_not_scanning_en
+  - package_not_scanning_fr
+  - priority_delivery_issue_en
+  - priority_delivery_issue_fr
+  - aggressive_client_en
+  - aggressive_client_fr
+  - traffic_accident_en
+  - traffic_accident_fr
+  - protest_blockage_en
+  - protest_blockage_fr
+  - construction_obstacle_en
+  - construction_obstacle_fr
+  - address_change_en
+  - address_change_fr
+  - uncharted_route_en
+  - uncharted_route_fr
+  - heavy_package_en
+  - heavy_package_fr
+  - app_technical_issue_en
+  - app_technical_issue_fr
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
+    - text: "Hey! How are you?"
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Bye! Have a great day."
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_access_Probleme_confirmtion_en:
+    - text: "Are you having an access problem?"
 
-  utter_access_Problemes:  # Correction de l'orthographe
-  - text: "You need to call the client  first, then text him, and then call him again."
+  utter_access_Probleme_confirmtion_fr:
+    - text: "Avez-vous un problème d'accès?"
+
+  utter_access_Problemes_en:
+    - text: "You need to call the client first, then text him, and then call him again. If no answer, try to ring at another apartment in the building, and you may get inside. As a last option, call driver support and follow their instructions."
+
+  utter_access_Problemes_fr:
+    - text: "Vous devez d'abord appeler le client, puis lui envoyer un message, et ensuite l'appeler à nouveau. S'il n'y a pas de réponse, essayez de sonner à un autre appartement dans le bâtiment. En dernier recours, appelez le support des chauffeurs et suivez leurs instructions."
+
+  utter_incorrect_address_confirmation_en:
+    - text: "Are you having an issue with the address?"
+
+  utter_incorrect_address_confirmation_fr:
+    - text: "Avez-vous un problème avec l'adresse?"
+
+  utter_incorrect_address_en:
+    - text: "Use another navigation app like Waze or Google Maps. Call the customer to confirm the address. If still an issue, call driver support."
+
+  utter_incorrect_address_fr:
+    - text: "Utilisez une autre application de navigation comme Waze ou Google Maps. Appelez le client pour confirmer l'adresse. Si le problème persiste, appelez le support des chauffeurs."
+
+  utter_unclear_delivery_instructions_confirmation_en:
+    - text: "Are the delivery instructions unclear?"
+
+  utter_unclear_delivery_instructions_confirmation_fr:
+    - text: "Les instructions de livraison ne sont pas claires ?"
+
+  utter_unclear_delivery_instructions_en:
+    - text: "Call the customer first. If no response, call the dispatcher."
+
+  utter_unclear_delivery_instructions_fr:
+    - text: "Appelez d'abord le client. Si pas de réponse, appelez le dispatcher."
+
+  utter_client_not_present_signature_confirmation_en:
+    - text: "Is the client not present and a code is required?"
+
+  utter_client_not_present_signature_confirmation_fr:
+    - text: "Le client est-il absent et un code est requis?"
+
+  utter_client_not_present_signature_en:
+    - text: "You need to call the client first, then text him, and then call him again. If no response, call driver support and follow their instructions."
+
+  utter_client_not_present_signature_fr:
+    - text: "Vous devez d'abord appeler le client, puis lui envoyer un message, et ensuite l'appeler à nouveau. Si aucune réponse, appelez le support des chauffeurs et suivez leurs instructions."
+
+  utter_parking_problem_confirmation_en:
+    - text: "Are you having trouble finding parking?"
+
+  utter_parking_problem_confirmation_fr:
+    - text: "Avez-vous un problème pour vous garer?"
+
+  utter_parking_problem_en:
+    - text: "Never park in a restricted zone. Park farther away and walk to the delivery address."
+
+  utter_parking_problem_fr:
+    - text: "Ne vous garez jamais dans une zone interdite. Garez-vous plus loin et marchez jusqu'à l'adresse de livraison."
+
+  utter_secure_area_access_confirmation_en:
+    - text: "Are you unable to access the secure area?"
+
+  utter_secure_area_access_confirmation_fr:
+    - text: "Ne pouvez-vous pas accéder à la zone sécurisée?"
+
+  utter_secure_area_access_en:
+    - text: "Call the client, send a text, and call again. If no response, contact driver support."
+
+  utter_secure_area_access_fr:
+    - text: "Appelez le client, envoyez un SMS, puis appelez à nouveau. Si aucune réponse, contactez le support des chauffeurs."
+
+  utter_route_error_confirmation_en:
+    - text: "Are you having an issue with the route in the app?"
+
+  utter_route_error_confirmation_fr:
+    - text: "Avez-vous un problème avec l'itinéraire dans l'application?"
+
+  utter_route_error_en:
+    - text: "Use another navigation app. Inform the dispatcher if the issue persists."
+
+  utter_route_error_fr:
+    - text: "Utilisez une autre application de navigation. Informez le dispatcher si le problème persiste."
+
+  utter_damaged_package_confirmation_en:
+    - text: "Is the package damaged?"
+
+  utter_damaged_package_confirmation_fr:
+    - text: "Le colis est-il endommagé?"
+
+  utter_damaged_package_en:
+    - text: "Inform the dispatcher and mark the package as damaged."
+
+  utter_damaged_package_fr:
+    - text: "Informez le dispatcher et marquez le colis comme endommagé."
+
+  utter_vehicle_problem_confirmation_en:
+    - text: "Are you having an issue with your delivery vehicle?"
+
+  utter_vehicle_problem_confirmation_fr:
+    - text: "Avez-vous un problème avec votre véhicule de livraison?"
+
+  utter_vehicle_problem_en:
+    - text: "Inform the dispatcher and wait for a replacement vehicle."
+
+  utter_vehicle_problem_fr:
+    - text: "Informez le dispatcher et attendez un véhicule de remplacement."
+
+  utter_package_refused_confirmation_en:
+    - text: "Did the customer refuse the package?"
+
+  utter_package_refused_confirmation_fr:
+    - text: "Le client a-t-il refusé le colis?"
+
+  utter_package_refused_en:
+    - text: "Contact driver support and follow their instructions."
+
+  utter_package_refused_fr:
+    - text: "Contactez le support des chauffeurs et suivez leurs instructions."
+
+  utter_missing_package_confirmation_en:
+    - text: "Is the package missing?"
+
+  utter_missing_package_confirmation_fr:
+    - text: "Le colis est-il manquant?"
+
+  utter_missing_package_en:
+    - text: "Check your open bag for the package. If it's not there, move on to the next stop. If it's a group stop and one package is missing, mark it as missing and deliver the rest. If still missing by the end of your route, call your dispatcher."
+
+  utter_missing_package_fr:
+    - text: "Vérifie bien dans ton sac ouvert pour le colis. Si tu ne le trouves pas, passe au prochain arrêt. Si c’est un arrêt groupé et un colis manque, marque-le comme manquant et livre les autres. À la fin de ta tournée, si toujours introuvable, appelle ton dispatcher."
+
+  utter_package_not_scanning_confirmation_en:
+    - text: "Are you unable to scan the package?"
+
+  utter_package_not_scanning_confirmation_fr:
+    - text: "Ne pouvez-vous pas scanner le colis?"
+
+  utter_package_not_scanning_en:
+    - text: "Call driver support first, and inform the dispatcher."
+
+  utter_package_not_scanning_fr:
+    - text: "Appelez le support des chauffeurs d'abord et informez le dispatcher."
+
+  utter_priority_delivery_issue_confirmation_en:
+    - text: "Are you having an issue with a priority delivery?"
+
+  utter_priority_delivery_issue_confirmation_fr:
+    - text: "Avez-vous un problème avec une livraison prioritaire?"
+
+  utter_priority_delivery_issue_en:
+    - text: "Call driver support and inform the dispatcher."
+
+  utter_priority_delivery_issue_fr:
+    - text: "Appelez le support des chauffeurs et informez le dispatcher."
+
+  utter_aggressive_client_confirmation_en:
+    - text: "Is the client aggressive or upset?"
+
+  utter_aggressive_client_confirmation_fr:
+    - text: "Le client est-il agressif ou mécontent?"
+
+  utter_aggressive_client_en:
+    - text: "Stay calm. Contact driver support and the dispatcher. Call 911 if necessary."
+
+  utter_aggressive_client_fr:
+    - text: "Restez calme. Contactez le support des chauffeurs et le dispatcher. Appelez le 911 si nécessaire."
+
+  utter_traffic_accident_confirmation_en:
+    - text: "Have you been involved in a traffic accident or safety issue?"
+
+  utter_traffic_accident_confirmation_fr:
+    - text: "Avez-vous été impliqué dans un accident de circulation ou un problème de sécurité?"
+
+  utter_traffic_accident_en:
+    - text: "Call the dispatcher immediately and follow their instructions."
+
+  utter_traffic_accident_fr:
+    - text: "Appelez immédiatement le dispatcher et suivez ses instructions."
+
+  utter_protest_blockage_confirmation_en:
+    - text: "Is the road blocked by a protest or strike?"
+
+  utter_protest_blockage_confirmation_fr:
+    - text: "La route est-elle bloquée par une manifestation ou une grève?"
+
+  utter_protest_blockage_en:
+    - text: "Inform the dispatcher immediately."
+
+  utter_protest_blockage_fr:
+    - text: "Informez immédiatement le dispatcher."
+
+  utter_construction_obstacle_confirmation_en:
+    - text: "Is access blocked due to construction or obstacles?"
+
+  utter_construction_obstacle_confirmation_fr:
+    - text: "L'accès est-il bloqué en raison de travaux ou d'obstacles?"
+
+  utter_construction_obstacle_en:
+    - text: "Call the client, send a text, and call again. If no response, contact driver support and the dispatcher."
+
+  utter_construction_obstacle_fr:
+    - text: "Appelez le client, envoyez un SMS, puis appelez à nouveau. Si aucune réponse, contactez le support des chauffeurs et le dispatcher."
+
+  utter_building_access_issue_confirmation_en:
+    - text: "Are you having trouble accessing the building?"
+
+  utter_building_access_issue_confirmation_fr:
+    - text: "Avez-vous des difficultés à accéder à l'immeuble?"
+
+  utter_address_change_confirmation_en:
+    - text: "Was the delivery address changed at the last minute?"
+
+  utter_address_change_confirmation_fr:
+    - text: "L'adresse de livraison a-t-elle changé à la dernière minute?"
+
+  utter_address_change_en:
+    - text: "Call driver support and inform the dispatcher."
+
+  utter_address_change_fr:
+    - text: "Appelez le support des chauffeurs et informez le dispatcher."
+
+  utter_uncharted_route_confirmation_en:
+    - text: "Is the road not on the map?"
+
+  utter_uncharted_route_confirmation_fr:
+    - text: "La route n'est-elle pas sur la carte?"
+
+  utter_uncharted_route_en:
+    - text: "Restart the mobile device and use another navigation app. Inform the dispatcher if the issue persists."
+
+  utter_uncharted_route_fr:
+    - text: "Redémarrez l'appareil mobile et utilisez une autre application de navigation. Informez le dispatcher si le problème persiste."
+
+  utter_heavy_package_confirmation_en:
+    - text: "Is the package too heavy or bulky?"
+
+  utter_heavy_package_confirmation_fr:
+    - text: "Le colis est-il trop lourd ou encombrant?"
+
+  utter_heavy_package_en:
+    - text: "Use the equipment provided by the company."
+
+  utter_heavy_package_fr:
+    - text: "Utilisez le matériel fourni par la compagnie."
+
+  utter_app_technical_issue_confirmation_en:
+    - text: "Are you having a technical issue with the delivery app?"
+
+  utter_app_technical_issue_confirmation_fr:
+    - text: "Avez-vous un problème technique avec l'application de livraison?"
+
+  utter_app_technical_issue_en:
+    - text: "Restart the app or the mobile device. If the issue persists, inform the dispatcher."
+
+  utter_app_technical_issue_fr:
+    - text: "Redémarrez l'application ou l'appareil mobile. Si le problème persiste, informez le dispatcher."
 
 session_config:
   session_expiration_time: 60

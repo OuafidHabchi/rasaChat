@@ -1,101 +1,336 @@
 version: "3.1"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  # Intentions existantes
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - good morning
+      - good evening
+      - greetings
+      - howdy
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+      - take care
+      - see you soon
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - absolutely
+      - sure
+      - oui
+      - yep
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - not at all
+      - absolutely not
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+  # Intentions pour problème d'accès (existant)
+  - intent: access_Problemes_en
+    examples: |
+      - I can't access the building
+      - I am locked out of the building
+      - The door won't open
+      - My key isn't working
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+  - intent: access_Problemes_fr
+    examples: |
+      - Je ne peux pas accéder au bâtiment
+      - Je suis bloqué à l'extérieur
+      - La porte ne s'ouvre pas
+      - Ma clé ne fonctionne pas
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  # Intentions pour les nouvelles situations
 
-- intent: access_Problemes
-  examples: |
-    - I can't access the building
-    - I cannot access the building
-    - I am unable to access the building
-    - I can't get into the building
-    - I am locked out of the building
-    - I cannot get inside the building
-    - I can't enter the building
+  - intent: incorrect_address_en
+    examples: |
+      - I cannot find the address
+      - The address is wrong
+      - The location doesn't exist
+      - The address seems incorrect
+
+  - intent: incorrect_address_fr
+    examples: |
+      - Je ne trouve pas l'adresse
+      - L'adresse est incorrecte
+      - L'adresse est introuvable
+      - L'endroit n'existe pas
+
+  - intent: unclear_delivery_instructions_en
+    examples: |
+      - The delivery instructions are unclear
+      - I don't understand the delivery instructions
+      - The instructions are confusing
+      - I'm not sure where to leave the package
+
+  - intent: unclear_delivery_instructions_fr
+    examples: |
+      - Les instructions de livraison sont pas claires
+      - Je ne comprends pas les instructions de livraison
+      - Les indications sont confuses
+      - Je ne sais pas où laisser le colis
+
+  - intent: client_not_present_signature_en
+    examples: |
+      - The client is not present and a code is required
+      - I need a code but the client is not here
+      - No one is home to sign for the delivery
+      - I can't get the signature, the client isn't present
+
+  - intent: client_not_present_signature_fr
+    examples: |
+      - Le client n'est pas présent et un code est requis
+      - Je dois obtenir un code mais le client est absent
+      - Personne n'est là pour signer la livraison
+      - Je ne peux pas obtenir la signature, le client n'est pas là
+
+  - intent: parking_problem_en
+    examples: |
+      - I can't find a parking spot
+      - There's no place to park
+      - Parking is impossible here
+      - I can't park near the delivery location
+
+  - intent: parking_problem_fr
+    examples: |
+      - Je ne trouve pas de place pour me garer
+      - Il n'y a pas de stationnement disponible
+      - Je ne peux pas me garer près du lieu de livraison
+      - Le stationnement est impossible ici
+
+  - intent: secure_area_access_en
+    examples: |
+      - I can't access the secure area
+      - The secure zone is locked
+      - I'm locked out of the restricted area
+      - My pass isn't working for the secure area
+
+  - intent: secure_area_access_fr
+    examples: |
+      - Je ne peux pas accéder à la zone sécurisée
+      - La zone sécurisée est fermée
+      - Je suis bloqué à l'extérieur de la zone restreinte
+      - Mon badge ne fonctionne pas pour la zone sécurisée
+
+  - intent: route_error_en
+    examples: |
+      - The route in the app is wrong
+      - The directions in the app are incorrect
+      - The app is showing the wrong path
+      - I'm being directed to the wrong location
+
+  - intent: route_error_fr
+    examples: |
+      - L'itinéraire dans l'application est incorrect
+      - Les indications dans l'application sont fausses
+      - L'application me montre un mauvais chemin
+      - Je suis dirigé vers un mauvais endroit
+
+  - intent: damaged_package_en
+    examples: |
+      - The package is damaged
+      - The delivery is broken
+      - The item is ruined
+      - The box is crushed
+
+  - intent: damaged_package_fr
+    examples: |
+      - Le colis est endommagé
+      - La livraison est abîmée
+      - L'article est détruit
+      - Le paquet est écrasé
+
+  - intent: vehicle_problem_en
+    examples: |
+      - There is an issue with my delivery vehicle
+      - My vehicle broke down
+      - The truck isn't working
+      - I'm having car trouble during the delivery
+
+  - intent: vehicle_problem_fr
+    examples: |
+      - Il y a un problème avec mon véhicule de livraison
+      - Mon véhicule est en panne
+      - Le camion ne fonctionne pas
+      - J'ai un problème de voiture pendant la livraison
+
+  - intent: package_refused_en
+    examples: |
+      - The customer refused the package
+      - The client rejected the delivery
+      - The recipient won't accept the package
+      - They declined to receive the package
+
+  - intent: package_refused_fr
+    examples: |
+      - Le client a refusé le colis
+      - Le client a rejeté la livraison
+      - Le destinataire refuse d'accepter le colis
+      - Ils ont décliné de recevoir le colis
+
+  - intent: missing_package_en
+    examples: |
+      - I can't find the package
+      - The package is missing
+      - The item isn't where it should be
+      - I can't locate the parcel
+
+  - intent: missing_package_fr
+    examples: |
+      - Je ne trouve pas le colis
+      - Le colis est introuvable
+      - L'article n'est pas là où il devrait être
+      - Je ne parviens pas à localiser le paquet
+
+  - intent: package_not_scanning_en
+    examples: |
+      - I can't scan the package
+      - The barcode isn't working
+      - The package won't scan
+      - I can't register the package in the system
+
+  - intent: package_not_scanning_fr
+    examples: |
+      - Je ne peux pas scanner le colis
+      - Le code-barres ne fonctionne pas
+      - Le colis ne se scanne pas
+      - Je ne peux pas enregistrer le colis dans le système
+
+  - intent: priority_delivery_issue_en
+    examples: |
+      - There is a problem with the priority delivery
+      - The priority delivery is delayed
+      - I'm facing an issue with a high-priority shipment
+      - The express delivery is having issues
+
+  - intent: priority_delivery_issue_fr
+    examples: |
+      - Il y a un problème avec la livraison prioritaire
+      - La livraison prioritaire est retardée
+      - J'ai un problème avec une expédition à haute priorité
+      - La livraison express rencontre des problèmes
+
+  - intent: aggressive_client_en
+    examples: |
+      - The client is aggressive
+      - The customer is acting hostile
+      - The recipient is being confrontational
+      - The client is angry and threatening
+
+  - intent: aggressive_client_fr
+    examples: |
+      - Le client est agressif
+      - Le client est hostile
+      - Le destinataire est confrontant
+      - Le client est en colère et menaçant
+
+  - intent: traffic_accident_en
+    examples: |
+      - I've been in a traffic accident
+      - I was involved in a collision
+      - My vehicle was hit
+      - I had an accident while delivering
+
+  - intent: traffic_accident_fr
+    examples: |
+      - J'ai eu un accident de circulation
+      - J'ai été impliqué dans une collision
+      - Mon véhicule a été heurté
+      - J'ai eu un accident pendant la livraison
+
+  - intent: protest_blockage_en
+    examples: |
+      - There is a protest blocking the road
+      - I can't get through due to a protest
+      - A demonstration is blocking the way
+      - Protestors are preventing me from passing
+
+  - intent: protest_blockage_fr
+    examples: |
+      - Il y a une manifestation qui bloque la route
+      - Je ne peux pas passer à cause d'une manifestation
+      - Une démonstration bloque le chemin
+      - Des protestataires m'empêchent de passer
+
+  - intent: construction_obstacle_en
+    examples: |
+      - I can't access the delivery point because of construction
+      - There's construction blocking the road
+      - The building site is in the way
+      - The construction zone is blocking my route
+
+  - intent: construction_obstacle_fr
+    examples: |
+      - Je ne peux pas accéder au point de livraison à cause des travaux
+      - Il y a des travaux qui bloquent la route
+      - Le chantier empêche l'accès
+      - La zone de construction bloque mon chemin
+
+  - intent: address_change_en
+    examples: |
+      - The delivery address was changed at the last minute
+      - The client updated the delivery location
+      - The address was modified just now
+      - They sent me a new address
+
+  - intent: address_change_fr
+    examples: |
+      - L'adresse de livraison a changé à la dernière minute
+      - Le client a mis à jour l'emplacement de livraison
+      - L'adresse a été modifiée à l'instant
+      - Ils m'ont envoyé une nouvelle adresse
+
+  - intent: uncharted_route_en
+    examples: |
+      - The road isn't on the map
+      - The path doesn't exist on the GPS
+      - This route isn't charted
+      - The map doesn't show this road
+
+  - intent: uncharted_route_fr
+    examples: |
+      - La route n'est pas sur la carte
+      - Le chemin n'existe pas sur le GPS
+      - Cet itinéraire n'est pas cartographié
+      - La carte ne montre pas cette route
+
+  - intent: heavy_package_en
+    examples: |
+      - The package is too heavy
+      - I can't lift this package
+      - This parcel is too large to carry
+      - The item is too heavy for one person
+
+  - intent: heavy_package_fr
+    examples: |
+      - Le colis est trop lourd
+      - Je ne peux pas soulever ce colis
+      - Ce paquet est trop volumineux pour être transporté
+      - L'article est trop lourd pour une seule personne
+
+  - intent: app_technical_issue_en
+    examples: |
+      - The app isn't working
+      - The application is broken
+      - The software crashed
+      - I can't open the app
+
+  - intent: app_technical_issue_fr
+    examples: |
+      - L'application ne fonctionne pas
+      - L'application est cassée
+      - Le logiciel a planté
+      - Je ne peux pas ouvrir l'application

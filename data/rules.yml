@@ -1,35 +1,299 @@
 version: "3.1"
 
 stories:
+  # Histoires pour problème d'accès (ancien)
+  - story: Access problem path en
+    steps:
+    - intent: access_Problemes_en
+    - action: utter_access_Probleme_confirmtion_en
+    - intent: affirm
+    - action: utter_access_Problemes_en
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: Access problem path fr
+    steps:
+    - intent: access_Problemes_fr
+    - action: utter_access_Probleme_confirmtion_fr
+    - intent: affirm
+    - action: utter_access_Problemes_fr
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  # Histoires pour les nouvelles situations
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: Incorrect address path en
+    steps:
+    - intent: incorrect_address_en
+    - action: utter_incorrect_address_confirmation_en
+    - intent: affirm
+    - action: utter_incorrect_address_en
 
-- story: Access problem path
-  steps:
-  - intent: access_Problemes
-  - action: utter_access_Problemes
+  - story: Incorrect address path fr
+    steps:
+    - intent: incorrect_address_fr
+    - action: utter_incorrect_address_confirmation_fr
+    - intent: affirm
+    - action: utter_incorrect_address_fr
+
+  - story: Unclear delivery instructions path en
+    steps:
+    - intent: unclear_delivery_instructions_en
+    - action: utter_unclear_delivery_instructions_confirmation_en
+    - intent: affirm
+    - action: utter_unclear_delivery_instructions_en
+
+  - story: Unclear delivery instructions path fr
+    steps:
+    - intent: unclear_delivery_instructions_fr
+    - action: utter_unclear_delivery_instructions_confirmation_fr
+    - intent: affirm
+    - action: utter_unclear_delivery_instructions_fr
+
+  - story: Client not present signature path en
+    steps:
+    - intent: client_not_present_signature_en
+    - action: utter_client_not_present_signature_confirmation_en
+    - intent: affirm
+    - action: utter_client_not_present_signature_en
+
+  - story: Client not present signature path fr
+    steps:
+    - intent: client_not_present_signature_fr
+    - action: utter_client_not_present_signature_confirmation_fr
+    - intent: affirm
+    - action: utter_client_not_present_signature_fr
+
+  - story: Parking problem path en
+    steps:
+    - intent: parking_problem_en
+    - action: utter_parking_problem_confirmation_en
+    - intent: affirm
+    - action: utter_parking_problem_en
+
+  - story: Parking problem path fr
+    steps:
+    - intent: parking_problem_fr
+    - action: utter_parking_problem_confirmation_fr
+    - intent: affirm
+    - action: utter_parking_problem_fr
+
+  - story: Secure area access path en
+    steps:
+    - intent: secure_area_access_en
+    - action: utter_secure_area_access_confirmation_en
+    - intent: affirm
+    - action: utter_secure_area_access_en
+
+  - story: Secure area access path fr
+    steps:
+    - intent: secure_area_access_fr
+    - action: utter_secure_area_access_confirmation_fr
+    - intent: affirm
+    - action: utter_secure_area_access_fr
+
+  - story: Route error path en
+    steps:
+    - intent: route_error_en
+    - action: utter_route_error_confirmation_en
+    - intent: affirm
+    - action: utter_route_error_en
+
+  - story: Route error path fr
+    steps:
+    - intent: route_error_fr
+    - action: utter_route_error_confirmation_fr
+    - intent: affirm
+    - action: utter_route_error_fr
+
+  - story: Damaged package path en
+    steps:
+    - intent: damaged_package_en
+    - action: utter_damaged_package_confirmation_en
+    - intent: affirm
+    - action: utter_damaged_package_en
+
+  - story: Damaged package path fr
+    steps:
+    - intent: damaged_package_fr
+    - action: utter_damaged_package_confirmation_fr
+    - intent: affirm
+    - action: utter_damaged_package_fr
+
+  - story: Vehicle problem path en
+    steps:
+    - intent: vehicle_problem_en
+    - action: utter_vehicle_problem_confirmation_en
+    - intent: affirm
+    - action: utter_vehicle_problem_en
+
+  - story: Vehicle problem path fr
+    steps:
+    - intent: vehicle_problem_fr
+    - action: utter_vehicle_problem_confirmation_fr
+    - intent: affirm
+    - action: utter_vehicle_problem_fr
+
+  - story: Package refused path en
+    steps:
+    - intent: package_refused_en
+    - action: utter_package_refused_confirmation_en
+    - intent: affirm
+    - action: utter_package_refused_en
+
+  - story: Package refused path fr
+    steps:
+    - intent: package_refused_fr
+    - action: utter_package_refused_confirmation_fr
+    - intent: affirm
+    - action: utter_package_refused_fr
+
+  - story: Missing package path en
+    steps:
+    - intent: missing_package_en
+    - action: utter_missing_package_confirmation_en
+    - intent: affirm
+    - action: utter_missing_package_en
+
+  - story: Missing package path fr
+    steps:
+    - intent: missing_package_fr
+    - action: utter_missing_package_confirmation_fr
+    - intent: affirm
+    - action: utter_missing_package_fr
+
+  - story: Package not scanning path en
+    steps:
+    - intent: package_not_scanning_en
+    - action: utter_package_not_scanning_confirmation_en
+    - intent: affirm
+    - action: utter_package_not_scanning_en
+
+  - story: Package not scanning path fr
+    steps:
+    - intent: package_not_scanning_fr
+    - action: utter_package_not_scanning_confirmation_fr
+    - intent: affirm
+    - action: utter_package_not_scanning_fr
+
+  - story: Priority delivery issue path en
+    steps:
+    - intent: priority_delivery_issue_en
+    - action: utter_priority_delivery_issue_confirmation_en
+    - intent: affirm
+    - action: utter_priority_delivery_issue_en
+
+  - story: Priority delivery issue path fr
+    steps:
+    - intent: priority_delivery_issue_fr
+    - action: utter_priority_delivery_issue_confirmation_fr
+    - intent: affirm
+    - action: utter_priority_delivery_issue_fr
+
+  - story: Aggressive client path en
+    steps:
+    - intent: aggressive_client_en
+    - action: utter_aggressive_client_confirmation_en
+    - intent: affirm
+    - action: utter_aggressive_client_en
+
+  - story: Aggressive client path fr
+    steps:
+    - intent: aggressive_client_fr
+    - action: utter_aggressive_client_confirmation_fr
+    - intent: affirm
+    - action: utter_aggressive_client_fr
+
+  - story: Traffic accident path en
+    steps:
+    - intent: traffic_accident_en
+    - action: utter_traffic_accident_confirmation_en
+    - intent: affirm
+    - action: utter_traffic_accident_en
+
+  - story: Traffic accident path fr
+    steps:
+    - intent: traffic_accident_fr
+    - action: utter_traffic_accident_confirmation_fr
+    - intent: affirm
+    - action: utter_traffic_accident_fr
+
+  - story: Protest blockage path en
+    steps:
+    - intent: protest_blockage_en
+    - action: utter_protest_blockage_confirmation_en
+    - intent: affirm
+    - action: utter_protest_blockage_en
+
+  - story: Protest blockage path fr
+    steps:
+    - intent: protest_blockage_fr
+    - action: utter_protest_blockage_confirmation_fr
+    - intent: affirm
+    - action: utter_protest_blockage_fr
+
+  - story: Construction obstacle path en
+    steps:
+    - intent: construction_obstacle_en
+    - action: utter_construction_obstacle_confirmation_en
+    - intent: affirm
+    - action: utter_construction_obstacle_en
+
+  - story: Construction obstacle path fr
+    steps:
+    - intent: construction_obstacle_fr
+    - action: utter_construction_obstacle_confirmation_fr
+    - intent: affirm
+    - action: utter_construction_obstacle_fr
+
+  - story: Address change path en
+    steps:
+    - intent: address_change_en
+    - action: utter_address_change_confirmation_en
+    - intent: affirm
+    - action: utter_address_change_en
+
+  - story: Address change path fr
+    steps:
+    - intent: address_change_fr
+    - action: utter_address_change_confirmation_fr
+    - intent: affirm
+    - action: utter_address_change_fr
+
+  - story: Uncharted route path en
+    steps:
+    - intent: uncharted_route_en
+    - action: utter_uncharted_route_confirmation_en
+    - intent: affirm
+    - action: utter_uncharted_route_en
+
+  - story: Uncharted route path fr
+    steps:
+    - intent: uncharted_route_fr
+    - action: utter_uncharted_route_confirmation_fr
+    - intent: affirm
+    - action: utter_uncharted_route_fr
+
+  - story: Heavy package path en
+    steps:
+    - intent: heavy_package_en
+    - action: utter_heavy_package_confirmation_en
+    - intent: affirm
+    - action: utter_heavy_package_en
+
+  - story: Heavy package path fr
+    steps:
+    - intent: heavy_package_fr
+    - action: utter_heavy_package_confirmation_fr
+    - intent: affirm
+    - action: utter_heavy_package_fr
+
+  - story: App technical issue path en
+    steps:
+    - intent: app_technical_issue_en
+    - action: utter_app_technical_issue_confirmation_en
+    - intent: affirm
+    - action: utter_app_technical_issue_en
+
+  - story: App technical issue path fr
+    steps:
+    - intent: app_technical_issue_fr
+    - action: utter_app_technical_issue_confirmation_fr
+    - intent: affirm
+    - action: utter_app_technical_issue_fr
