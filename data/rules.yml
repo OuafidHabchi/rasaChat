@@ -297,3 +297,215 @@ stories:
     - action: utter_app_technical_issue_confirmation_fr
     - intent: affirm
     - action: utter_app_technical_issue_fr
+
+  - story: improuve DSB fr
+    steps:
+    - intent: improuve_DSB_fr
+    - action: utter_DSB_fr_confirmation_fr
+    - intent: affirm
+    - action: utter_improuve_DSB_fr
+
+  - story: improuve DSB en
+    steps:
+    - intent: improuve_DSB_en
+    - action: utter_DSB_en_confirmation_en
+    - intent: affirm
+    - action: utter_improuve_DSB_en
+
+
+  - story: improuve_CC_fr
+    steps:
+    - intent: improuve_CC_fr
+    - action: utter_improuve_CC_confirmation_fr
+    - intent: affirm
+    - action: utter_improuve_CC_fr
+  
+  - story: improuve_CC_en
+    steps:
+    - intent: improuve_CC_en
+    - action: utter_improuve_CC_confirmation_en
+    - intent: affirm
+    - action: utter_improuve_CC_en
+  
+  - story: improuve_DNR_fr
+    steps:
+    - intent: improuve_DNR_fr
+    - action: utter_improuve_DNR_confirmation_fr
+    - intent: affirm
+    - action: utter_reduce_DNR_fr
+
+  - story: improuve_DNR_en
+    steps:
+    - intent: improuve_DNR_en
+    - action: utter_improuve_DNR_confirmation_en
+    - intent: affirm
+    - action: utter_reduce_DNR_en
+
+  - story: improuve_DCR_fr
+    steps:
+    - intent: improuve_DCR_fr
+    - action: utter_improuve_DCR_confirmation_fr
+    - intent: affirm
+    - action: utter_improuve_DCR_fr  
+
+  - story: improuve_DCR_en
+    steps:
+    - intent: improuve_DCR_en
+    - action: utter_improuve_DCR_confirmation_en
+    - intent: affirm
+    - action: utter_improve_DCR_en
+
+  - story: AVI module path en
+    steps:
+      - intent: avi_module_en
+      - action: utter_avi_module_confirmation_en
+      - intent: affirm
+      - action: utter_avi_module_procedure_en
+
+  - story: AVI module path fr
+    steps:
+      - intent: avi_module_fr
+      - action: utter_avi_module_confirmation_fr
+      - intent: affirm
+      - action: utter_avi_module_procedure_fr
+
+  - story: Time sheets reminder path en
+    steps:
+      - intent: time_sheets_reminder_en
+      - action: utter_time_sheets_reminder_confirmation_en
+      - intent: affirm
+      - action: utter_time_sheets_reminder_procedure_en
+
+  - story: Time sheets reminder path fr
+    steps:
+      - intent: time_sheets_reminder_fr
+      - action: utter_time_sheets_reminder_confirmation_fr
+      - intent: affirm
+      - action: utter_time_sheets_reminder_procedure_fr
+
+
+  - story: Multi-address delivery path en
+    steps:
+      - intent: multi_address_delivery_en
+      - action: utter_multi_address_delivery_confirmation_en
+      - intent: affirm
+      - action: utter_multi_address_delivery_procedure_en
+
+  - story: Multi-address delivery path fr
+    steps:
+      - intent: multi_address_delivery_fr
+      - action: utter_multi_address_delivery_confirmation_fr
+      - intent: affirm
+      - action: utter_multi_address_delivery_procedure_fr
+
+  - story: Slippery streets warning path en
+    steps:
+      - intent: slippery_streets_warning_en
+      - action: utter_slippery_streets_warning_confirmation_en
+      - intent: affirm
+      - action: utter_slippery_streets_warning_procedure_en
+
+  - story: Slippery streets warning path fr
+    steps:
+      - intent: slippery_streets_warning_fr
+      - action: utter_slippery_streets_warning_confirmation_fr
+      - intent: affirm
+      - action: utter_slippery_streets_warning_procedure_fr
+
+  - story: Access problems in Amazon Flex path en
+    steps:
+      - intent: access_problems_flex_en
+      - action: utter_access_problems_flex_confirmation_en
+      - intent: affirm
+      - action: utter_access_problems_flex_procedure_en
+
+  - story: Access problems in Amazon Flex path fr
+    steps:
+      - intent: access_problems_flex_fr
+      - action: utter_access_problems_flex_confirmation_fr
+      - intent: affirm
+      - action: utter_access_problems_flex_procedure_fr
+
+  - story: Vehicle inspection DVIC path en
+    steps:
+      - intent: vehicle_inspection_dvic_en
+      - action: utter_vehicle_inspection_dvic_confirmation_en
+      - intent: affirm
+      - action: utter_vehicle_inspection_dvic_procedure_en
+
+  - story: Vehicle inspection DVIC path fr
+    steps:
+      - intent: vehicle_inspection_dvic_fr
+      - action: utter_vehicle_inspection_dvic_confirmation_fr
+      - intent: affirm
+      - action: utter_vehicle_inspection_dvic_procedure_fr
+  
+  - story: Safe driving programs with Netradyne path en
+    steps:
+      - intent: safe_driving_programs_netradyne_en
+      - action: utter_safe_driving_programs_netradyne_confirmation_en
+      - intent: affirm
+      - action: utter_safe_driving_programs_netradyne_procedure_en
+
+  - story: Safe driving programs with Netradyne path fr
+    steps:
+      - intent: safe_driving_programs_netradyne_fr
+      - action: utter_safe_driving_programs_netradyne_confirmation_fr
+      - intent: affirm
+      - action: utter_safe_driving_programs_netradyne_procedure_fr
+
+
+  - story: Delivery photo (POD) path en
+    steps:
+      - intent: delivery_photo_pod_en
+      - action: utter_delivery_photo_pod_confirmation_en
+      - intent: affirm
+      - action: utter_delivery_photo_pod_procedure_en
+
+  - story: Delivery photo (POD) path fr
+    steps:
+      - intent: delivery_photo_pod_fr
+      - action: utter_delivery_photo_pod_confirmation_fr
+      - intent: affirm
+      - action: utter_delivery_photo_pod_procedure_fr
+
+  - story: Amazon uniform path en
+    steps:
+      - intent: amazon_uniform_en
+      - action: utter_amazon_uniform_confirmation_en
+      - intent: affirm
+      - action: utter_amazon_uniform_procedure_en
+
+  - story: Amazon uniform path fr
+    steps:
+      - intent: amazon_uniform_fr
+      - action: utter_amazon_uniform_confirmation_fr
+      - intent: affirm
+      - action: utter_amazon_uniform_procedure_fr
+  
+  - story: Reminder path en
+    steps:
+      - intent: reminder_parking_speed_en
+      - action: utter_reminder_parking_speed_confirmation_en
+      - intent: affirm
+      - action: utter_reminder_parking_speed_procedure_en
+
+  - story: Reminder path fr
+    steps:
+      - intent: reminder_parking_speed_fr
+      - action: utter_reminder_parking_speed_confirmation_fr
+      - intent: affirm
+      - action: utter_reminder_parking_speed_procedure_fr
+
+
+
+
+
+
+
+
+
+
+  
+
+  

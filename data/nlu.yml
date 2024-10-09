@@ -334,3 +334,200 @@ nlu:
       - L'application est cassée
       - Le logiciel a planté
       - Je ne peux pas ouvrir l'application
+
+  - intent: improuve_DSB_fr
+    examples: |
+      - Comment améliorer mon Delivery Success Behavior (DSB) 
+      - Comment puis-je améliorer la performance de ma livraison 
+      - Quels sont les moyens d'optimiser la réussite de mes livraisons 
+      - Comment rendre mes livraisons plus efficaces 
+      - Comment améliorer le taux de réussite de mes livraisons 
+    
+  - intent: improuve_DSB_en
+    examples: |
+      - How can I improve my Delivery Success Behavior (DSB)
+      - How can I improve my delivery performance
+      - What are the ways to optimize my delivery success
+      - How can I make my deliveries more efficient
+      - How can I improve my delivery success rate
+
+  - intent: improuve_CC_fr
+    examples: |
+      - Comment améliorer mon contact compliance (CC)
+      - Comment puis-je optimiser mon contact compliance (CC)
+      - Quels sont les moyens d'améliorer la qualité du contact compliance (CC)
+      - Comment respecter les procédures de contact client pour chaque livraison (CC)
+      - Comment améliorer le taux de réussite de mes contacts compliances (CC)
+
+
+  - intent: improuve_CC_en
+    examples: |
+      - How can I improve my  contact compliance (CC)
+      - How can I optimize my  contact compliance (CC)
+      - What are the ways to improve the quality of contact compliance (CC)
+      - How can I follow the customer contact procedures for every delivery (CC)
+      - How can I improve my contact compliance success rate (CC)
+
+  - intent: improuve_DNR_fr
+    examples: |
+      - Comment éviter les DNR ?
+      - Comment gérer un DNR ?
+      - Que dois-je faire pour éviter un DNR ?
+
+  - intent: improuve_DNR_en
+    examples: |
+      - How to avoid DNRs?
+      - How to handle a DNR?
+      - What should I do to avoid a DNR?
+
+  - intent: improuve_DCR_fr
+    examples: |
+      - Comment éviter les DCR ?
+      - Comment gérer un DCR ?
+      - Que dois-je faire pour éviter un DCR ?
+
+  - intent: improuve_DCR_en
+    examples: |
+      - How to avoid DCRs?
+      - How to handle a DCR?
+      - What should I do to avoid a DCR?
+
+  - intent: avi_module_en
+    examples: |
+      - How does the AVI module work?
+      - What should I do after using the AVI module?
+      - Can you explain the AVI module procedure?
+
+  - intent: avi_module_fr
+    examples: |
+      - Comment fonctionne le module AVI ?
+      - Que dois-je faire après avoir utilisé le module AVI ?
+      - Pouvez-vous m'expliquer la procédure du module AVI ?
+
+  - intent: time_sheets_reminder_en
+    examples: |
+      - What is the time sheets policy?
+      - Can you remind me about the time sheets rules?
+      - What should I know about time sheets?
+
+  - intent: time_sheets_reminder_fr
+    examples: |
+      - Quelle est la politique concernant les feuilles de temps ?
+      - Pouvez-vous me rappeler les règles des feuilles de temps ?
+      - Que dois-je savoir sur les feuilles de temps ?
+
+  - intent: multi_address_delivery_en
+    examples: |
+      - What is the process for multi-address delivery?
+      - Can you explain how to do a multi-address delivery?
+      - How do I deliver to multiple addresses?
+
+  - intent: multi_address_delivery_fr
+    examples: |
+      - Quelle est la procédure pour une livraison multi-adresse ?
+      - Pouvez-vous m'expliquer comment effectuer une livraison multi-adresse ?
+      - Comment livrer à plusieurs adresses ?
+
+  - intent: slippery_streets_warning_en
+    examples: |
+      - What should I do on slippery streets?
+      - How do I handle slippery streets?
+      - Any precautions for slippery streets?
+
+  - intent: slippery_streets_warning_fr
+    examples: |
+      - Que dois-je faire dans les rues glissantes ?
+      - Comment gérer les rues glissantes ?
+      - Y a-t-il des précautions pour les rues glissantes ?
+
+  - intent: access_problems_flex_en
+    examples: |
+      - How do I resolve access problems in the Amazon Flex app?
+      - What should I do if I can't access the building on Amazon Flex?
+      - Can you guide me through solving access issues on Amazon Flex?
+
+  - intent: access_problems_flex_fr
+    examples: |
+      - Comment résoudre les problèmes d'accès dans l'application Amazon Flex ?
+      - Que dois-je faire si je ne peux pas accéder au bâtiment sur Amazon Flex ?
+      - Pouvez-vous m'expliquer comment résoudre les problèmes d'accès sur Amazon Flex ?
+
+  - intent: vehicle_inspection_dvic_en
+    examples: |
+      - What is the process for vehicle inspection (DVIC)?
+      - Can you explain the DVIC vehicle inspection process?
+      - How do I complete a DVIC vehicle inspection?
+
+  - intent: vehicle_inspection_dvic_fr
+    examples: |
+      - Quelle est la procédure d'inspection du véhicule (DVIC) ?
+      - Pouvez-vous m'expliquer l'inspection du véhicule DVIC ?
+      - Comment effectuer une inspection de véhicule DVIC ?
+
+  - intent: safe_driving_programs_netradyne_en
+    examples: |
+      - Netradyne cameras ?
+      - Can you tell me about Amazon's safe driving programs with Netradyne cameras?
+      - How does Amazon use Netradyne and Geotab for safe driving?
+      - What is Netradyne's role in Amazon's safe driving program?
+
+  - intent: safe_driving_programs_netradyne_fr
+    examples: |
+      - caméras Netradyne ?
+      - Pouvez-vous m'expliquer les programmes de conduite sécuritaire d'Amazon avec les caméras Netradyne ?
+      - Comment Amazon utilise Netradyne et Geotab pour la conduite sécuritaire ?
+      - Quel est le rôle de Netradyne dans le programme de conduite sécuritaire d'Amazon ?
+
+  - intent: delivery_photo_pod_en
+    examples: |
+      - How do I take a delivery photo (POD)?
+      - What are the rules for taking a delivery photo?
+      - Can you guide me on how to take a POD?
+
+  - intent: delivery_photo_pod_fr
+    examples: |
+      - Comment prendre une photo de livraison (POD) ?
+      - Quelles sont les règles pour prendre une photo de livraison ?
+      - Pouvez-vous m'expliquer comment prendre une POD ?
+
+  - intent: amazon_uniform_en
+    examples: |
+      - Amazon uniform
+      - What is the Amazon uniform policy?
+      - Can you tell me the rules for wearing the Amazon uniform?
+      - What should I wear as part of the Amazon uniform?
+
+  - intent: amazon_uniform_fr
+    examples: |
+      - uniforme Amazon
+      - Quelle est la politique de l'uniforme Amazon ?
+      - Pouvez-vous me dire les règles pour porter l'uniforme Amazon ?
+      - Que dois-je porter en tant qu'uniforme Amazon ?
+
+  - intent: reminder_parking_speed_en
+    examples: |
+      - parking speed limit
+      - truck cleanliness
+      - dispatcher check trucks
+      - clean truck reminder
+      - speed limit in parking lot
+
+  - intent: reminder_parking_speed_fr
+    examples: |
+      - limite de vitesse parking
+      - propreté camion
+      - vérification camions répartition
+      - rappel nettoyage camion
+      - limite vitesse stationnement
+
+
+
+
+
+
+
+
+
+      
+
+

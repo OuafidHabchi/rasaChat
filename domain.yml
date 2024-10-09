@@ -47,6 +47,41 @@ intents:
   - heavy_package_fr
   - app_technical_issue_en
   - app_technical_issue_fr
+  - improuve_DSB_fr
+  - improuve_DSB_en
+  - improuve_CC_fr
+  - improuve_CC_en
+  - improuve_DCR_en
+  - improuve_DCR_fr
+  - improuve_DNR_en
+  - improuve_DNR_fr
+  - avi_module_en
+  - avi_module_fr
+  - time_sheets_reminder_en
+  - time_sheets_reminder_fr
+  - multi_address_delivery_en
+  - multi_address_delivery_fr
+  - slippery_streets_warning_en
+  - slippery_streets_warning_fr
+  - access_problems_flex_en
+  - access_problems_flex_fr
+  - vehicle_inspection_dvic_en
+  - vehicle_inspection_dvic_fr 
+  - safe_driving_programs_netradyne_en
+  - safe_driving_programs_netradyne_fr
+  - delivery_photo_pod_en
+  - delivery_photo_pod_fr
+  - amazon_uniform_en
+  - amazon_uniform_fr
+  - reminder_parking_speed_en
+  - reminder_parking_speed_fr
+
+
+
+
+
+  
+
 
 responses:
   utter_greet:
@@ -62,10 +97,10 @@ responses:
     - text: "Avez-vous un problème d'accès?"
 
   utter_access_Problemes_en:
-    - text: "You need to call the client first, then text him, and then call him again. If no answer, try to ring at another apartment in the building, and you may get inside. As a last option, call driver support and follow their instructions."
+    - text: "You need to call the client first, then text them, and call again. If there's no answer, try ringing another apartment in the building to gain access. As a last option, call driver support and follow their instructions. If you’ve already contacted support and wish to handle the access issue on your own, simply follow the steps outlined in this [link](https://docs.google.com/document/d/1bgF1DHerq095k7Xn8Gsdv0MfaLPgdmaKHNCTURqc3PM/edit?usp=sharing) ."
 
   utter_access_Problemes_fr:
-    - text: "Vous devez d'abord appeler le client, puis lui envoyer un message, et ensuite l'appeler à nouveau. S'il n'y a pas de réponse, essayez de sonner à un autre appartement dans le bâtiment. En dernier recours, appelez le support des chauffeurs et suivez leurs instructions."
+    - text: "Vous devez d'abord appeler le client, puis lui envoyer un message, et ensuite l'appeler à nouveau. S'il n'y a pas de réponse, essayez de sonner à un autre appartement dans le bâtiment. En dernier recours, appelez le support des chauffeurs et suivez leurs instructions. Si vous avez déjà contacté le support et souhaitez gérer le problème d'accès par vous-même, suivez simplement les étapes décrites dans ce [lien](https://docs.google.com/document/d/1YKW1p0970OPx7W9VNEY9aQOfJzv-sfriR8zuN-02fuk/edit?usp=sharing)."
 
   utter_incorrect_address_confirmation_en:
     - text: "Are you having an issue with the address?"
@@ -305,13 +340,370 @@ responses:
     - text: "Are you having a technical issue with the delivery app?"
 
   utter_app_technical_issue_confirmation_fr:
-    - text: "Avez-vous un problème technique avec l'application de livraison?"
+    - text: "Avez-vous un problème technique avec l'application de livraison ?"
 
   utter_app_technical_issue_en:
     - text: "Restart the app or the mobile device. If the issue persists, inform the dispatcher."
 
   utter_app_technical_issue_fr:
     - text: "Redémarrez l'application ou l'appareil mobile. Si le problème persiste, informez le dispatcher."
+
+  utter_DSB_fr_confirmation_fr:
+    - text: "Si je comprends bien, vous souhaitez savoir comment améliorer votre Delivery Success Behavior (DSB), est-ce correct ?"
+
+  utter_DSB_en_confirmation_en:
+    - text: "If I understand correctly, you want to know how to improve your Delivery Success Behavior (DSB), is that right ?"
+  
+  utter_improuve_CC_confirmation_fr:
+    - text: "Si je comprends bien, vous souhaitez savoir comment améliorer votre conformité au contact client (CC), est-ce correct ?"
+  
+  utter_improuve_CC_confirmation_en:
+    - text: "If I understand correctly, you want to know how to improve your customer contact compliance (CC), is that right ?"
+  
+  utter_improuve_DCR_confirmation_fr:
+    - text: "Si je comprends bien, vous souhaitez savoir comment améliorer votre taux de réussite des livraisons (DCR), est-ce correct ?"
+
+  utter_improuve_DCR_confirmation_en:
+    - text: "If I understand correctly, you want to know how to improve your Delivery Completion Rate (DCR), is that right ?"
+
+  utter_improuve_DNR_confirmation_en:
+    - text: "If I understand correctly, you want to know how to reduce the number of undelivered packages (DNR), is that right ?"
+
+  utter_improuve_DNR_confirmation_fr:
+    - text: "Si je comprends bien, vous souhaitez savoir comment réduire le nombre de colis non reçus (DNR), est-ce correct ?"
+
+  utter_avi_module_confirmation_en:
+    - text: "Are you asking for the AVI module procedure?"
+
+  utter_avi_module_confirmation_fr:
+    - text: "Demandez-vous la procédure du module AVI?"
+
+  utter_avi_module_procedure_en:
+    - text: "The AVI module allows automatic inspection of trucks. At the end of the day, drive through the tunnel at a speed of 7-8 km/h with windows closed. Do not reverse in the tunnel. After passing through, perform the post-trip inspection. For more details, consult this link: [https://docs.google.com/document/d/1tLbQJ9Ajv05lvCMjsrxD4vB1GQ7L-UcXzu02ET-qIPk/edit?usp=sharing]."
+
+  utter_avi_module_procedure_fr:
+    - text: "Le module AVI permet l'inspection automatique des camions. À la fin de la journée, passez sous le tunnel à une vitesse de 7-8 km/h, fenêtres fermées. Ne reculez pas dans le tunnel. Après le passage, effectuez l'inspection post-trajet. Pour plus de détails, consultez ce lien : [https://docs.google.com/document/d/1tLbQJ9Ajv05lvCMjsrxD4vB1GQ7L-UcXzu02ET-qIPk/edit?usp=sharing]."
+
+  utter_time_sheets_reminder_confirmation_en:
+    - text: "Are you asking about the time sheets policy?"
+
+  utter_time_sheets_reminder_confirmation_fr:
+    - text: "Demandez-vous des informations sur la politique des feuilles de temps?"
+
+  utter_time_sheets_reminder_procedure_en:
+    - text: "Please enter your hours at the end of each day. No delays are tolerated (+3 min = -15 min). Go straight to your first stop and return without any detours after the last one. Respect the breaks: 30 minutes unpaid and 2 paid breaks of 15 minutes each. For more details, check this [link](https://docs.google.com/document/d/1e7sXx50Ml8GiPN9XQ_rBZL64Y4ze5o5gFaF-yoO1m-Q/edit?usp=sharing)."
+
+  utter_time_sheets_reminder_procedure_fr:
+    - text: "Saisissez vos heures à la fin de chaque journée. Aucun retard n’est toléré (+3 min = -15 min). Allez directement à votre premier arrêt et revenez sans détour après le dernier. Respectez les pauses : 30 minutes non payée et 2 pauses de 15 minutes payées. Pour plus de détails, consultez ce [lien](https://docs.google.com/document/d/1dkRx6fVuHjiATk7DTGcqsC1wPGWxPk6oM0KwELx7Tq0/edit?usp=sharing)."
+
+  utter_multi_address_delivery_confirmation_en:
+    - text: "Are you asking about the multi-address delivery process?"
+
+  utter_multi_address_delivery_confirmation_fr:
+    - text: "Demandez-vous des informations sur la procédure de livraison multi-adresse?"
+
+  utter_multi_address_delivery_procedure_en:
+    - text: "Here are the steps for multi-address delivery: Verify the packages before leaving the truck. Check the client notes upon arrival. Scan the packages and select a delivery address. Follow the app instructions for each address. Confirm the delivery with a photo or signature if required. For more details, consult this [link](https://docs.google.com/document/d/1QLmE1L_zryn8MikhRg7fSJhXNKTdcG12k27GSSYGKps/edit?usp=sharing)."
+
+  utter_multi_address_delivery_procedure_fr:
+    - text: "Voici les étapes pour une livraison multi-adresse : Vérifiez les colis avant de quitter le camion. Consultez les notes du client à votre arrivée. Scannez les colis et sélectionnez une adresse de livraison. Suivez les instructions de l'application pour chaque adresse. Confirmez la livraison avec une photo ou une signature si nécessaire. Pour plus de détails, consultez ce [lien](https://docs.google.com/document/d/1QTSCHYtcjhXDXLcmVgDG1xVzM8fO-7i_zxrt_e6ezf0/edit?usp=sharing)."
+
+  utter_slippery_streets_warning_confirmation_en:
+    - text: "Are you asking for precautions on slippery streets?"
+
+  utter_slippery_streets_warning_confirmation_fr:
+    - text: "Demandez-vous des précautions pour les rues glissantes?"
+
+  utter_slippery_streets_warning_procedure_en:
+    - text: "Be cautious as the streets with stairs are slippery. Wear shoes with spikes and park in stable areas to avoid any risk. For more details, check this [link](https://docs.google.com/document/d/1P_8RRBLJVLAviHZv924stRWaAfA-KOrhn4UE07ELEXc/edit?usp=sharing)."
+
+  utter_slippery_streets_warning_procedure_fr:
+    - text: "Attention, les rues avec escaliers sont glissantes. Portez des chaussures avec crampons et garez-vous dans des zones stables pour éviter tout risque. Pour plus de détails, consultez ce [lien](https://docs.google.com/document/d/1P_8RRBLJVLAviHZv924stRWaAfA-KOrhn4UE07ELEXc/edit?usp=sharing)."
+
+  utter_access_problems_flex_confirmation_en:
+    - text: "Are you asking about resolving access problems in the Amazon Flex app?"
+
+  utter_access_problems_flex_confirmation_fr:
+    - text: "Demandez-vous comment résoudre les problèmes d'accès dans l'application Amazon Flex?"
+
+  utter_access_problems_flex_procedure_en:
+    - text: "To resolve access problems in Amazon Flex: Click on the '?' icon in the top-right corner. Select 'CAN'T GET ACCESS' from the options. Choose to call or text the client. Send the message 'CAN'T GET ACCESS.' Confirm by swiping to finish. For more details, check this [link](https://docs.google.com/document/d/1bgF1DHerq095k7Xn8Gsdv0MfaLPgdmaKHNCTURqc3PM/edit?usp=sharing)."
+
+  utter_access_problems_flex_procedure_fr:
+    - text: "Pour résoudre les problèmes d'accès dans Amazon Flex : Cliquez sur l'icône '?' en haut à droite. Sélectionnez 'CAN'T GET ACCESS' dans les options. Choisissez d'appeler ou d'envoyer un message au client. Envoyez le message 'CAN'T GET ACCESS.' Confirmez en glissant pour terminer. Pour plus de détails, consultez ce [lien](https://docs.google.com/document/d/1YKW1p0970OPx7W9VNEY9aQOfJzv-sfriR8zuN-02fuk/edit?usp=sharing)."
+
+  utter_vehicle_inspection_dvic_confirmation_en:
+    - text: "Are you asking about the DVIC vehicle inspection process?"
+
+  utter_vehicle_inspection_dvic_confirmation_fr:
+    - text: "Demandez-vous des informations sur la procédure d'inspection du véhicule DVIC?"
+
+  utter_vehicle_inspection_dvic_procedure_en:
+    - text: "Perform a vehicle inspection before and after each trip (maximum 3 minutes). If the app skips this step, inform the dispatcher immediately. For more details, consult this [link](https://docs.google.com/document/d/1BaLY32kMsEKOM72sAjMkGa8f9xrRCoH6tY-sUD9-fNc/edit?usp=sharing)."
+
+  utter_vehicle_inspection_dvic_procedure_fr:
+    - text: "Effectuez une inspection avant et après chaque trajet (3 minutes maximum). Si l'application saute cette étape, informez immédiatement le répartiteur. Pour plus de détails, consultez ce [lien](https://docs.google.com/document/d/1BaLY32kMsEKOM72sAjMkGa8f9xrRCoH6tY-sUD9-fNc/edit?usp=sharing)."
+
+  utter_safe_driving_programs_netradyne_confirmation_en:
+    - text: "Are you asking about Amazon's safe driving programs with Netradyne cameras?"
+
+  utter_safe_driving_programs_netradyne_confirmation_fr:
+    - text: "Demandez-vous des informations sur les programmes de conduite sécuritaire d'Amazon avec les caméras Netradyne?"
+
+  utter_safe_driving_programs_netradyne_procedure_en:
+    - text: "Amazon uses technologies like Netradyne cameras and Geotab to monitor and correct risky driving behaviors. In-cab audio alerts, stop notifications, and road safety alerts are used to adjust behaviors. Drivers may be enrolled in retraining programs if risks persist. For more details, check this [link](https://docs.google.com/document/d/1UcMxtS8wK7yp8Krncnx7X1isw8Ci60hcO8QIanL6EnY/edit?usp=sharing)."
+
+  utter_safe_driving_programs_netradyne_procedure_fr:
+    - text: "Amazon utilise des technologies comme les caméras Netradyne et Geotab pour surveiller et corriger les comportements de conduite risqués. Des alertes audio en cabine, des notifications à l'arrêt et des alertes de sécurité routière sont mises en place pour ajuster les comportements. Les conducteurs peuvent être inscrits à des programmes de réentraînement si les risques persistent. Pour plus de détails, consultez ce [lien](https://docs.google.com/document/d/1YYb4r6HaMLyhcQ_6ccwKvTM4npoZHDTfip3oMjPzjlc/edit?usp=sharing)."
+
+  utter_delivery_photo_pod_confirmation_en:
+    - text: "Are you asking about the procedure for taking a delivery photo (POD)?"
+
+  utter_delivery_photo_pod_confirmation_fr:
+    - text: "Demandez-vous des informations sur la procédure pour prendre une photo de livraison (POD)?"
+
+  utter_delivery_photo_pod_procedure_en:
+    - text: "To take a delivery photo (POD): Position the package with the label visible. Ensure the package occupies about 50% of the photo. Never take a photo inside the vehicle or while holding the package. For more details, check this [link](https://docs.google.com/document/d/1tYrXVgX6bCFUYt6ftK2eMXwSdb6f00whLULExjuNuH8/edit?usp=sharing)."
+
+  utter_delivery_photo_pod_procedure_fr:
+    - text: "Pour prendre une photo de livraison (POD) : Positionnez le colis avec l'étiquette visible. Assurez-vous que le colis occupe environ 50 % de la photo. Ne prenez jamais de photo à l'intérieur du véhicule ou en tenant le colis. Pour plus de détails, consultez ce [lien](https://docs.google.com/document/d/1dx_4pDJedbkTe_wfB62RF7_nHSAy9aIJFgtuWmu5zY4/edit?usp=sharing)."
+
+  utter_amazon_uniform_confirmation_en:
+    - text: "Are you asking about the Amazon uniform policy?"
+
+  utter_amazon_uniform_confirmation_fr:
+    - text: "Demandez-vous des informations sur la politique de l'uniforme Amazon?"
+
+  utter_amazon_uniform_procedure_en:
+    - text: "Wear the Amazon uniform as a priority. If unavailable, wear black or dark blue clothing. Always wear the yellow safety vest with the Amazon logo. For more details, check this [link](https://docs.google.com/document/d/18lcUn7AAouI_FP6trLwU2p1MvjaYB3ZahqZ1aUK_vwQ/edit?usp=sharing)."
+
+  utter_amazon_uniform_procedure_fr:
+    - text: "Portez l'uniforme Amazon en priorité. Si indisponible, portez des vêtements noirs ou bleu foncé. Toujours porter le gilet de sécurité jaune avec le logo Amazon. Pour plus de détails, consultez ce [lien](https://docs.google.com/document/d/18lcUn7AAouI_FP6trLwU2p1MvjaYB3ZahqZ1aUK_vwQ/edit?usp=sharing)."
+
+  utter_reminder_parking_speed_confirmation_en:
+    - text: "Are you asking for the reminder regarding parking speed limits and truck cleanliness?"
+
+  utter_reminder_parking_speed_confirmation_fr:
+    - text: "Demandez-vous des informations sur le rappel concernant les limites de vitesse dans les parkings et la propreté des camions?"
+
+  utter_reminder_parking_speed_procedure_en:
+    - text: "Respect the speed limits in parking lots. Make sure to dispose of waste and keep your trucks clean. The dispatcher team will regularly check the condition of the trucks. For more details, check this [link](https://docs.google.com/document/d/1pH2eBeFu9vcSJPtvNyZuXRd4-sPfxycDPdZ9yIzmMA8/edit?usp=sharing)."
+
+  utter_reminder_parking_speed_procedure_fr:
+    - text: "Respectez les limites de vitesse dans les parkings. Veillez à jeter les déchets et garder vos camions propres. L'équipe de répartition vérifiera régulièrement l'état des camions. Pour plus de détails, consultez ce [lien](https://docs.google.com/document/d/1pH2eBeFu9vcSJPtvNyZuXRd4-sPfxycDPdZ9yIzmMA8/edit?usp=sharing)."
+
+
+  utter_reduce_DNR_fr:
+    - text: |
+        Procédure pour Réduire les DNR (Delivery Not Received)
+
+        Vérification des informations avant livraison :
+        - Assurez-vous que toutes les informations (adresse, instructions, etc.) sont correctes avant d'effectuer une livraison. Cela évite les erreurs liées à des adresses incorrectes ou des consignes manquantes.
+
+        Preuve de livraison obligatoire :
+        - Prenez une photo claire du colis à l'endroit où il a été déposé (porte, entrée) ou demandez une signature si nécessaire. Ne marquez jamais un colis comme livré sans preuve.
+
+        Respect des consignes de livraison :
+        - Suivez précisément les instructions laissées par le client pour le dépôt du colis. En cas d'absence d'instructions, utilisez des points sûrs (comme une boîte aux lettres ou un voisin).
+
+        Gestion proactive des problèmes :
+        - Si l'accès au lieu de livraison est impossible (porte verrouillée, entreprise fermée), contactez immédiatement le client pour obtenir de nouvelles instructions. Ne laissez pas le colis dans un endroit non sécurisé sans autorisation.
+
+        Reprogrammation en cas d'échec :
+        - Si la livraison ne peut pas être effectuée, ne marquez pas le colis comme livré. Reprogrammez une nouvelle tentative de livraison ou suivez la procédure pour ramener le colis.
+
+        Communication avec le client :
+        - En cas d'échec de livraison, informez rapidement le client de la situation via un SMS ou l’application. Cela permet de résoudre les problèmes rapidement et d’éviter les DNR.
+
+        Suivi et correction des erreurs :
+        - Si un DNR est signalé, analysez les erreurs potentielles (comme un dépôt incorrect ou une mauvaise communication) et ajustez votre méthode pour éviter les récidives.
+  
+  utter_reduce_DNR_en:
+    - text: |
+        Procedure to Reduce DNR (Delivery Not Received)
+
+        Verification of information before delivery:
+        - Ensure that all information (address, instructions, etc.) is correct before making a delivery. This helps avoid errors due to incorrect addresses or missing instructions.
+
+        Mandatory proof of delivery:
+        - Take a clear photo of the package at the location where it was placed (door, entrance), or request a signature if necessary. Never mark a package as delivered without proof.
+
+        Following delivery instructions:
+        - Precisely follow the instructions left by the customer for the drop-off. If no instructions are provided, use safe points (like a mailbox or a neighbor).
+
+        Proactive problem management:
+        - If access to the delivery location is impossible (locked door, closed business), immediately contact the customer for new instructions. Do not leave the package in an unsecured location without authorization.
+
+        Rescheduling in case of failure:
+        - If delivery cannot be completed, do not mark the package as delivered. Reschedule a new delivery attempt or follow the procedure to return the package.
+
+        Customer communication:
+        - In case of delivery failure, quickly inform the customer of the situation via SMS or the app. This helps resolve issues quickly and avoid DNRs.
+
+        Tracking and error correction:
+        - If a DNR is reported, analyze potential errors (such as incorrect drop-off or poor communication) and adjust your method to avoid repeat issues.
+
+
+  utter_improve_DCR_en:
+    - text: |
+        Procedure to Improve DCR (Delivery Completion Rate)
+
+        Preparation before the delivery route:
+        - Organize the packages in your vehicle starting with deliveries to commercial locations.
+        - Double-check addresses, access codes, and opening hours to avoid errors during deliveries.
+
+        Prioritizing commercial locations:
+        - Always start with commercial addresses during business hours to maximize successful deliveries.
+
+        Respecting delivery time windows:
+        - Deliver packages during the specified time windows, especially for businesses. Avoid delays or deliveries outside of business hours.
+
+        Using communication tools:
+        - Notify customers in advance of your arrival via SMS or the delivery app. This helps coordinate deliveries, especially at commercial addresses.
+
+        Taking photos and proof of delivery:
+        - Always take a clear photo of delivered packages to provide proof in case of claims.
+
+        Tracking system:
+        - Use GPS to optimize your routes and reduce the time between deliveries, maximizing the success rate.
+
+        Performance analysis:
+        - Regularly assess your DCR to identify trends, adjust routes, and avoid repetitive errors.
+
+
+  utter_improuve_DCR_fr:
+    - text: |
+        Procédure pour Améliorer le DCR (Delivery Completion Rate)
+
+        Préparation avant la tournée de livraison :
+        - Organisez les colis dans votre véhicule en commençant par les livraisons aux lieux commerciaux.
+        - Revérifiez les adresses, codes d'accès, et heures d'ouverture pour éviter les erreurs lors des livraisons.
+
+        Priorisation des lieux commerciaux :
+        - Commencez toujours par les adresses commerciales pendant les heures d’ouverture pour maximiser les livraisons réussies.
+
+        Respect des créneaux horaires :
+        - Livrez les colis pendant les heures spécifiées, notamment pour les entreprises. Évitez les retards ou les livraisons en dehors des heures d'ouverture.
+
+        Utilisation des outils de communication :
+        - Informez les clients à l'avance de votre arrivée via SMS ou l'application de livraison. Cela aide à coordonner les réceptions, surtout aux adresses commerciales.
+
+        Prise de photos et preuve de livraison :
+        - Prenez systématiquement une photo claire des colis livrés pour fournir une preuve en cas de réclamation.
+
+        Système de suivi :
+        - Utilisez le GPS pour optimiser vos itinéraires et réduire le temps entre les livraisons, maximisant ainsi le taux de réussite des livraisons.
+
+        Analyse des performances :
+        - Évaluez régulièrement votre DCR pour identifier les tendances, ajuster les itinéraires, et éviter les erreurs répétitives.
+
+
+  utter_improuve_CC_en:
+  - text: |
+      To ensure impeccable delivery service, it is mandatory to follow the steps below when encountering any delivery issues:
+
+      Situations Requiring Customer Contact
+      You must contact the customer to find a solution in the following situations:
+      - Unclear or unfeasible customer delivery instructions.
+      - Incorrect or untraceable address.
+      - No secure location to drop off the package.
+      - Any other issues preventing the successful delivery of the package.
+
+      Steps to Follow if Unable to Deliver a Package
+
+      1. Call the Customer 
+      Use the delivery app to call the customer and try to resolve the issue.  
+      If the customer does not answer, proceed to the next step.
+
+      2. Send a Text Message 
+      If no response to the call, send a text message to the customer via the delivery app.
+
+      3. Contact Driver Support 
+      If the customer remains unreachable, notify driver support.  
+      Additionally, send a photo of the package label with the TBC to the dispatcher. In some cases, the dispatcher can obtain the customer’s phone number.
+
+      4. Make a Second Delivery Attempt  
+      If time permits, attempt a second delivery for any undelivered packages before the end of the day.
+
+      5. End-of-Day Report to Dispatcher  
+      Before returning to the station, call the dispatcher to inform them of all undelivered packages.
+
+      Additional Notes:
+      - Sometimes, the app may prompt you to contact the customer even if the package is deliverable. In these cases, you must call and then text the customer, regardless of whether the package was successfully delivered.
+      - Any undelivered package, for which the customer contact procedure was followed, will not be counted in your DCR (Delivery Completion Rate).
+
+      Thank you for your cooperation and commitment to providing top-quality delivery service.
+
+  utter_improuve_CC_fr:
+  - text: |
+      Pour assurer un service de livraison impeccable, il est obligatoire de suivre les étapes ci-dessous en cas de problème de livraison :
+
+      Situations nécessitant un contact avec le client
+      Vous devez contacter le client pour trouver une solution dans les situations suivantes :
+      - Instructions de livraison du client peu claires ou irréalisables.
+      - Adresse incorrecte ou introuvable.
+      - Aucun endroit sécurisé pour déposer le colis.
+      - Tout autre problème empêchant la livraison du colis.
+
+      Étapes à suivre si vous ne pouvez pas livrer un colis
+
+      1. Appelez le client  
+      Utilisez l'application de livraison pour appeler le client et essayer de résoudre le problème.  
+      Si le client ne répond pas, passez à l'étape suivante.
+
+      2. Envoyez un message texte  
+      Si le client ne répond pas à l'appel, envoyez-lui un message texte via l'application de livraison.
+
+      3. Contactez le support chauffeur  
+      Si le client reste injoignable, contactez le support chauffeur.  
+      Envoyez également une photo de l'étiquette du colis avec le TBC au dispatcher. Dans certains cas, le dispatcher peut obtenir le numéro de téléphone du client.
+
+      4. Faites une seconde tentative de livraison  
+      Si le temps le permet, tentez une seconde livraison pour les colis non livrés avant la fin de la journée.
+
+      5. Rapport de fin de journée au dispatcher  
+      Avant de retourner à la station, appelez le dispatcher pour l'informer de tous les colis non livrés.
+
+      Notes supplémentaires :
+      - Parfois, l'application peut vous demander de contacter le client même si le colis est livrable. Dans ces cas, vous devez appeler et envoyer un message texte au client, que le colis soit livré ou non.
+      - Tout colis non livré, pour lequel la procédure de contact client a été suivie, ne sera pas pris en compte dans votre taux de finalisation des livraisons (DCR).
+
+      Merci pour votre coopération et votre engagement à fournir un service de livraison de qualité.
+
+  
+  utter_improuve_DSB_fr:
+    - text: |
+        Étape 1 : Vérifiez les colis pour la livraison multiple 
+        Avant de quitter le camion, assurez-vous que tous les colis destinés à plusieurs adresses au même arrêt sont présents. Utilisez le numéro de sac et la couleur pour les identifier. Ne scannez pas les colis dans le camion. Une fois tout vérifié, dirigez-vous vers l'adresse de livraison.
+
+        Étape 2 : Vérifiez les notes des clients 
+        À l'arrivée, consultez les notes des clients pour des instructions spécifiques (points de dépôt, codes de sécurité, etc.). Suivez-les attentivement pour livrer les colis conformément aux préférences du client.
+
+        Étape 3 : Scannez les colis et sélectionnez l'adresse  
+        À l'intérieur du bâtiment, scannez les colis pour vérifier leur présence. Choisissez ensuite l'adresse de livraison dans l'application et regroupez les colis par adresse avant de commencer la distribution.
+
+        Étape 4 : Suivez les instructions de l'application  
+        Sélectionnez l'adresse et appuyez sur "Continuer avec [nombre de] colis". Suivez les options de livraison suggérées, sauf si les notes des clients demandent autre chose. Si vous essayez un autre emplacement, l'application vous avertira.
+
+        Étape 5 : Confirmez la livraison  
+        Si une photo est requise, prenez une photo claire du colis. Reculez pour bien cadrer et assurez-vous que personne ne soit visible sur la photo. Si vous livrez à une personne, obtenez une signature et enregistrez le nom. N'utilisez pas l'option "membre du foyer" pour confirmer la réception.
+
+  utter_improuve_DSB_en:
+    - text: |
+        Step 1: Check packages for multi-address delivery  
+        Before leaving the truck, make sure all packages designated for multiple addresses at this stop are present. Use the bag number and color to locate them. Do not scan the packages while still in the truck. Once everything is verified, proceed to the delivery address.
+
+        Step 2: Check customer notes
+        Upon arrival, review the customer notes for specific delivery instructions (e.g., preferred drop-off points, security codes). Follow these instructions carefully to ensure the parcels are delivered according to the customer's preferences.
+
+        Step 3: Scan packages and select the delivery address
+        Once inside the building, scan all packages for multi-stop delivery to confirm their presence. Then, select the delivery address in the app and group the packages accordingly before starting the delivery.
+
+        Step 4: Follow the app's delivery instructions  
+        After selecting the address, press "Continue with [number of packages]". Follow the suggested delivery options unless customer instructions specify otherwise. If you attempt to deliver to a location not suggested, the app will alert you.
+
+        Step 5: Confirm delivery  
+        If a photo is required, take a clear picture of the package. Step back to properly frame the package, ensuring no one (such as the customer or any reflections) is visible in the image. If delivering to a person, obtain a signature and record the name. Do not use the "household member" option to confirm receipt.
 
 session_config:
   session_expiration_time: 60
